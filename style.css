@@ -1,0 +1,230 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef4ff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Skip Link */
+.skip-link{
+    position:absolute;
+    left:-9999px;
+}
+
+.skip-link:focus{
+    left:20px;
+    top:20px;
+    background:#000;
+    color:#fff;
+    padding:10px;
+    z-index:1000;
+}
+
+/* Navigation */
+header{
+    position:sticky;
+    top:0;
+    background:#0d47a1;
+    z-index:1000;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    color:#fff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(to right,#1565c0,#42a5f5);
+    color:white;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero h3{
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#1565c0;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffd54f;
+}
+
+/* Sections */
+section{
+    padding:70px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:35px;
+    font-size:34px;
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* About */
+#about p,
+#education p{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+/* Strengths */
+#strengths ul,
+section ul{
+    max-width:400px;
+    margin:auto;
+    list-style:square;
+    line-height:2;
+}
+
+/* Contact */
+form{
+    max-width:600px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:12px;
+    border:1px solid #bbb;
+    border-radius:8px;
+    font-size:16px;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#1565c0;
+    outline:none;
+}
+
+button{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0d47a1;
+}
+
+#contact p{
+    text-align:center;
+    margin:8px 0;
+}
+
+/* Footer */
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin-top:20px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+section{
+    padding:50px 25px;
+}
+
+}
