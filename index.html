@@ -1,268 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharanya | Portfolio</title>
 
-    <meta name="description" content="Portfolio of Sharanya, Computer Science and Engineering Student">
-    <meta name="keywords" content="Portfolio, HTML, CSS, JavaScript, Web Development">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sharanya | Computer Science Portfolio</title>
+
+    <meta name="description"
+        content="Portfolio of Sharanya, a Computer Science and Engineering student interested in web development.">
+
+    <meta name="keywords"
+        content="Sharanya, Portfolio, HTML, CSS, JavaScript, Web Development">
+
     <meta name="author" content="Sharanya">
 
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
 
-<a href="#home" class="skip-link">Skip to Main Content</a>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">
+        Skip to Main Content
+    </a>
 
-<header>
 
-    <nav aria-label="Main Navigation">
+    <!-- HEADER -->
+    <header>
 
-        <h2 class="logo">Sharanya</h2>
+        <nav aria-label="Main Navigation">
 
-        <ul>
+            <h2 class="logo">Sharanya</h2>
 
-            <li><a href="#home">Home</a></li>
+            <ul>
 
-            <li><a href="#about">About</a></li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
 
-            <li><a href="#education">Education</a></li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
-            <li><a href="#projects">Projects</a></li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
 
-            <li><a href="#skills">Skills</a></li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
 
-            <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
 
-        </ul>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
 
-    </nav>
+            </ul>
 
-</header>
+            <!-- Dark Mode Button -->
+            <button
+                id="theme-toggle"
+                type="button"
+                aria-label="Toggle dark mode"
+                title="Toggle dark mode">
+                🌙
+            </button>
 
-<!-- HOME -->
+        </nav>
 
-<main>
+    </header>
 
-<section id="home" class="hero">
 
-<h1>Hello, I'm Sharanya 👋</h1>
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
 
-<h3>Computer Science & Engineering Student</h3>
 
-<p>
+        <!-- HOME -->
+        <section id="home" class="hero">
 
-Passionate about Web Development, Problem Solving and
-building responsive websites.
+            <div>
 
-</p>
+                <h1>
+                    Hello, I'm Sharanya 👋
+                </h1>
 
-<a href="#projects" class="btn">
-View My Projects
-</a>
+                <h3>
+                    Computer Science & Engineering Student
+                </h3>
 
-</section>
+                <p>
+                    I am passionate about Web Development,
+                    Problem Solving and building responsive
+                    and accessible websites.
+                </p>
 
-<!-- ABOUT -->
+                <a href="#projects" class="btn">
+                    View My Projects
+                </a>
 
-<section id="about">
+            </div>
 
-<h2>About Me</h2>
+        </section>
 
-<p>
 
-I am a second-year Computer Science and Engineering student
-with a CGPA of 8.5/10.
-I enjoy learning new technologies and developing modern web applications.
+        <!-- ABOUT -->
+        <section id="about">
 
-</p>
+            <h2>About Me</h2>
 
-</section>
+            <article class="card">
 
-<!-- EDUCATION -->
+                <p>
+                    I am a second-year Computer Science and
+                    Engineering student with a CGPA of 8.5/10.
+                </p>
 
-<section id="education">
+                <p>
+                    I enjoy learning new technologies and
+                    developing modern web applications.
+                </p>
 
-<h2>Education</h2>
+            </article>
 
-<div class="card">
+        </section>
 
-<h3>B.E Computer Science & Engineering</h3>
 
-<p>
+        <!-- EDUCATION -->
+        <section id="education">
 
-AJ Institution of Engineering and Technology
+            <h2>Education</h2>
 
-</p>
+            <div class="cards">
 
-<p>
+                <article class="card">
 
-Expected Graduation : 2028
+                    <h3>
+                        B.E. Computer Science & Engineering
+                    </h3>
 
-</p>
+                    <p>
+                        AJ Institution of Engineering
+                        and Technology
+                    </p>
 
-<p>
+                    <p>
+                        Expected Graduation: 2028
+                    </p>
 
-CGPA : 8.5 / 10
+                    <p>
+                        CGPA: 8.5 / 10
+                    </p>
 
-</p>
+                </article>
 
-</div>
+            </div>
 
-</section>
+        </section>
 
-<!-- PROJECTS -->
 
-<section id="projects">
+        <!-- PROJECTS -->
+        <section id="projects">
 
-<h2>Projects</h2>
+            <h2>My Projects</h2>
 
-<div class="cards">
+            <div class="cards">
 
-<div class="card">
+                <article class="card">
 
-<h3>Hospital Management System</h3>
+                    <h3>
+                        Hospital Management System
+                    </h3>
 
-<p>
+                    <p>
+                        An academic web application designed
+                        for patient registration, doctor
+                        management and appointments.
+                    </p>
 
-Academic web application for patient registration,
-doctor management and appointments.
+                </article>
 
-</p>
 
-</div>
+                <article class="card">
 
-<div class="card">
+                    <h3>
+                        Food Express
+                    </h3>
 
-<h3>Food Express</h3>
+                    <p>
+                        An online food ordering website
+                        developed using HTML, CSS and
+                        JavaScript.
+                    </p>
 
-<p>
+                </article>
 
-Online food ordering website built using
-HTML, CSS and JavaScript.
+            </div>
 
-</p>
+        </section>
 
-</div>
 
-</div>
+        <!-- SKILLS -->
+        <section id="skills">
 
-</section>
+            <h2>Technical Skills</h2>
 
-<!-- SKILLS -->
+            <div class="cards">
 
-<section id="skills">
+                <article class="card">
 
-<h2>Technical Skills</h2>
+                    <h3>Web Technologies</h3>
 
-<div class="cards">
+                    <p>HTML5</p>
 
-<div class="card">
+                    <p>CSS3</p>
 
-<h3>Languages</h3>
+                    <p>JavaScript</p>
 
-<p>HTML5</p>
+                </article>
 
-<p>CSS3</p>
 
-<p>JavaScript</p>
+                <article class="card">
 
-</div>
+                    <h3>Tools</h3>
 
-<div class="card">
+                    <p>
+                        Visual Studio Code
+                    </p>
 
-<h3>Tools</h3>
+                </article>
 
-<p>Visual Studio Code</p>
 
-</div>
+                <article class="card">
 
-<div class="card">
+                    <h3>Web Development</h3>
 
-<h3>Concepts</h3>
+                    <p>
+                        Responsive Web Design
+                    </p>
 
-<p>Responsive Web Design</p>
+                    <p>
+                        Web Application Development
+                    </p>
 
-<p>Web Application Development</p>
+                </article>
 
-</div>
+            </div>
 
-</div>
+        </section>
 
-</section>
 
-<!-- STRENGTHS -->
+        <!-- STRENGTHS -->
+        <section id="strengths">
 
-<section>
+            <h2>My Strengths</h2>
 
-<h2>Strengths</h2>
+            <ul>
 
-<ul>
+                <li>Quick Learner</li>
 
-<li>Quick Learner</li>
+                <li>Problem Solving</li>
 
-<li>Problem Solving</li>
+                <li>Teamwork</li>
 
-<li>Teamwork</li>
+                <li>Communication</li>
 
-<li>Communication</li>
+            </ul>
 
-</ul>
+        </section>
 
-</section>
 
-<!-- CONTACT -->
+        <!-- CONTACT -->
+        <section id="contact">
 
-<section id="contact">
+            <h2>Contact Me</h2>
 
-<h2>Contact Me</h2>
+            <p>
+                Feel free to contact me for opportunities,
+                projects or collaboration.
+            </p>
 
-<p><strong>Email:</strong> sharanyashanu@gmail.com</p>
 
-<p><strong>Phone:</strong> +91 63609 13093</p>
+            <form aria-label="Contact Form">
 
-<p><strong>GitHub:</strong> github.com/Sharanya32</p>
+                <div>
 
-<p><strong>LinkedIn:</strong> linkedin.com/in/sharanyaaa</p>
+                    <label for="name">
+                        Name
+                    </label>
 
-<form>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required>
 
-<label for="name">Name</label>
+                </div>
 
-<input type="text" id="name" required>
 
-<label for="email">Email</label>
+                <div>
 
-<input type="email" id="email" required>
+                    <label for="email">
+                        Email
+                    </label>
 
-<label for="message">Message</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
 
-<textarea id="message" rows="5" required></textarea>
+                </div>
 
-<button type="submit">
 
-Send Message
+                <div>
 
-</button>
+                    <label for="message">
+                        Message
+                    </label>
 
-</form>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required></textarea>
 
-</section>
+                </div>
 
-</main>
 
-<footer>
+                <button type="submit">
+                    Send Message
+                </button>
 
-<p>
+            </form>
 
-© 2026 Sharanya | Portfolio
+        </section>
 
-</p>
+    </main>
 
-</footer>
 
-<script src="main.js"></script>
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Sharanya | Portfolio
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
 
 </body>
+
 </html>
