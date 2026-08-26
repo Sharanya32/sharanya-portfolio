@@ -16,23 +16,25 @@
 
     <meta name="author" content="Sharanya">
 
- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Skip Navigation -->
+    <!-- Skip Link -->
     <a href="#main-content" class="skip-link">
         Skip to Main Content
     </a>
 
 
-    <!-- HEADER -->
+    <!-- Header -->
     <header>
 
         <nav aria-label="Main Navigation">
 
-            <h2 class="logo">Sharanya</h2>
+            <h2 class="logo">
+                Sharanya
+            </h2>
 
             <ul>
 
@@ -62,6 +64,7 @@
 
             </ul>
 
+
             <!-- Dark Mode Button -->
             <button
                 id="theme-toggle"
@@ -76,11 +79,14 @@
     </header>
 
 
-    <!-- MAIN CONTENT -->
+    <!-- Main Content -->
     <main id="main-content">
 
 
-        <!-- HOME -->
+        <!-- =========================
+             HOME
+        ========================== -->
+
         <section id="home" class="hero">
 
             <div>
@@ -94,7 +100,7 @@
                 </h3>
 
                 <p>
-                    I am passionate about Web Development,
+                    Passionate about Web Development,
                     Problem Solving and building responsive
                     and accessible websites.
                 </p>
@@ -108,7 +114,10 @@
         </section>
 
 
-        <!-- ABOUT -->
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
         <section id="about">
 
             <h2>About Me</h2>
@@ -116,9 +125,12 @@
             <article class="card">
 
                 <p>
-                    I am a second-year Computer Science and
-                    Engineering student with a CGPA of 8.5/10.
+                    I am a second-year Computer Science
+                    and Engineering student with a CGPA
+                    of 8.5/10.
                 </p>
+
+                <br>
 
                 <p>
                     I enjoy learning new technologies and
@@ -130,7 +142,10 @@
         </section>
 
 
-        <!-- EDUCATION -->
+        <!-- =========================
+             EDUCATION
+        ========================== -->
+
         <section id="education">
 
             <h2>Education</h2>
@@ -140,7 +155,7 @@
                 <article class="card">
 
                     <h3>
-                        B.E. Computer Science & Engineering
+                        B.E. Computer Science and Engineering
                     </h3>
 
                     <p>
@@ -163,12 +178,18 @@
         </section>
 
 
-        <!-- PROJECTS -->
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
         <section id="projects">
 
             <h2>My Projects</h2>
 
             <div class="cards">
+
+
+                <!-- Project 1 -->
 
                 <article class="card">
 
@@ -185,6 +206,8 @@
                 </article>
 
 
+                <!-- Project 2 -->
+
                 <article class="card">
 
                     <h3>
@@ -199,37 +222,62 @@
 
                 </article>
 
+
+                <!-- Project 3 - NEW TO-DO LIST -->
+
+                <article class="card">
+
+                    <h3>
+                        JavaScript To-Do List
+                    </h3>
+
+                    <p>
+                        A state-driven task management
+                        application with CRUD functionality,
+                        filtering and localStorage persistence.
+                    </p>
+
+                    <br>
+
+                    <a href="todo.html" class="btn">
+                        Open To-Do List
+                    </a>
+
+                </article>
+
+
             </div>
 
         </section>
 
 
-        <!-- SKILLS -->
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
         <section id="skills">
 
             <h2>Technical Skills</h2>
 
             <div class="cards">
 
-                <article class="card">
-
-                    <h3>Web Technologies</h3>
-
-                    <p>HTML5</p>
-
-                    <p>CSS3</p>
-
-                    <p>JavaScript</p>
-
-                </article>
-
 
                 <article class="card">
 
-                    <h3>Tools</h3>
+                    <h3>
+                        Web Technologies
+                    </h3>
 
                     <p>
-                        Visual Studio Code
+                        HTML5
+                    </p>
+
+                    <p>
+                        CSS3
+                    </p>
+
+                    <p>
+                        JavaScript
                     </p>
 
                 </article>
@@ -237,7 +285,26 @@
 
                 <article class="card">
 
-                    <h3>Web Development</h3>
+                    <h3>
+                        Tools
+                    </h3>
+
+                    <p>
+                        Visual Studio Code
+                    </p>
+
+                    <p>
+                        GitHub
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <h3>
+                        Web Development
+                    </h3>
 
                     <p>
                         Responsive Web Design
@@ -254,27 +321,41 @@
         </section>
 
 
-        <!-- STRENGTHS -->
+        <!-- =========================
+             STRENGTHS
+        ========================== -->
+
         <section id="strengths">
 
             <h2>My Strengths</h2>
 
             <ul>
 
-                <li>Quick Learner</li>
+                <li>
+                    Quick Learner
+                </li>
 
-                <li>Problem Solving</li>
+                <li>
+                    Problem Solving
+                </li>
 
-                <li>Teamwork</li>
+                <li>
+                    Teamwork
+                </li>
 
-                <li>Communication</li>
+                <li>
+                    Communication
+                </li>
 
             </ul>
 
         </section>
 
 
-        <!-- CONTACT -->
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
         <section id="contact">
 
             <h2>Contact Me</h2>
@@ -285,7 +366,10 @@
             </p>
 
 
-            <form aria-label="Contact Form">
+            <form
+                aria-label="Contact Form"
+                id="contact-form">
+
 
                 <div>
 
@@ -329,7 +413,8 @@
                         id="message"
                         name="message"
                         rows="6"
-                        required></textarea>
+                        required>
+                    </textarea>
 
                 </div>
 
@@ -345,7 +430,8 @@
     </main>
 
 
-    <!-- FOOTER -->
+    <!-- Footer -->
+
     <footer>
 
         <p>
@@ -355,7 +441,8 @@
     </footer>
 
 
-    <!-- JAVASCRIPT -->
+    <!-- JavaScript -->
+
     <script src="main.js"></script>
 
 </body>
