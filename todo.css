@@ -1,0 +1,390 @@
+/* =========================
+   CSS VARIABLES
+========================= */
+
+:root {
+    --primary: #1565c0;
+    --secondary: #42a5f5;
+    --background: #eef4ff;
+    --card: #ffffff;
+    --text: #222222;
+    --border: #cccccc;
+    --danger: #d32f2f;
+    --success: #2e7d32;
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+}
+
+
+nav {
+    max-width: 900px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+nav h1 {
+    font-size: 24px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    min-height: 80vh;
+    padding: 40px 20px;
+}
+
+
+.todo-container {
+    max-width: 700px;
+    margin: auto;
+
+    background: var(--card);
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: var(--shadow);
+}
+
+
+.todo-container h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+#task-form {
+    margin-top: 25px;
+}
+
+
+#task-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+
+#task-input {
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+#task-input:focus {
+    outline: 3px solid rgba(21, 101, 192, 0.25);
+
+    border-color: var(--primary);
+}
+
+
+.input-group button {
+    background: var(--primary);
+    color: white;
+
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.input-group button:hover {
+    background: #0d47a1;
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+    display: flex;
+    gap: 10px;
+
+    margin: 25px 0;
+
+    flex-wrap: wrap;
+}
+
+
+.filter-btn {
+    background: white;
+
+    border: 1px solid var(--primary);
+
+    color: var(--primary);
+
+    padding: 9px 16px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* =========================
+   TASK COUNT
+========================= */
+
+#task-count {
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   TASK LIST
+========================= */
+
+#task-list {
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.task-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: #fafafa;
+}
+
+
+.task-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex: 1;
+}
+
+
+.task-text {
+    word-break: break-word;
+}
+
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+
+    color: #777;
+}
+
+
+/* =========================
+   TASK ACTIONS
+========================= */
+
+.task-actions {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.task-actions button {
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    color: white;
+}
+
+
+.edit-btn {
+    background: var(--primary);
+}
+
+
+.delete-btn {
+    background: var(--danger);
+}
+
+
+.task-actions button:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+#empty-message {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #666;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--primary);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .todo-container {
+        padding: 25px 18px;
+    }
+
+
+    .input-group {
+        flex-direction: column;
+    }
+
+
+    .input-group button {
+        width: 100%;
+    }
+
+
+    .task-item {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .task-actions {
+        width: 100%;
+    }
+
+
+    .task-actions button {
+        flex: 1;
+    }
+
+}
