@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Sharanya's To-Do List application built with JavaScript and localStorage">
+
+    <title>To-Do List | Sharanya</title>
+
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="To-Do Application Navigation">
+
+            <h1>My To-Do List</h1>
+
+            <a href="index.html">
+                ← Back to Portfolio
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="todo-container" aria-labelledby="todo-title">
+
+            <h2 id="todo-title">Task Manager</h2>
+
+            <p>
+                Add, edit, complete and delete your tasks.
+            </p>
+
+
+            <!-- Add Task Form -->
+
+            <form id="task-form">
+
+                <label for="task-input">
+                    Add a new task
+                </label>
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="task-input"
+                        placeholder="Enter your task..."
+                        required
+                        autocomplete="off">
+
+                    <button type="submit">
+                        Add Task
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <!-- Filters -->
+
+            <div class="filters"
+                role="group"
+                aria-label="Task filters">
+
+                <button
+                    type="button"
+                    class="filter-btn active"
+                    data-filter="all">
+
+                    All
+
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="active">
+
+                    Active
+
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="completed">
+
+                    Completed
+
+                </button>
+
+            </div>
+
+
+            <!-- Task Count -->
+
+            <p id="task-count" aria-live="polite">
+                0 tasks
+            </p>
+
+
+            <!-- Task List -->
+
+            <ul
+                id="task-list"
+                aria-live="polite">
+            </ul>
+
+
+            <!-- Empty Message -->
+
+            <p id="empty-message">
+                No tasks yet. Add your first task!
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Sharanya | To-Do List
+        </p>
+
+    </footer>
+
+
+    <script src="todo.js"></script>
+
+</body>
+
+</html>
