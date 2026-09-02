@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Weather Dashboard using JavaScript Fetch API">
+
+    <title>Weather Dashboard | Sharanya</title>
+
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Weather Dashboard</h1>
+            <a href="index.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="weather-container">
+
+            <h2>Check Weather</h2>
+
+            <form id="weatherForm">
+
+                <label for="city">Enter City Name</label>
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="Enter city name"
+                        required
+                    >
+
+                    <button type="submit">
+                        Search
+                    </button>
+                </div>
+
+            </form>
+
+            <p id="errorMessage"></p>
+
+            <div id="weatherResult" class="weather-card">
+
+                <h2 id="cityName">Weather Information</h2>
+
+                <p>
+                    🌡️ Temperature:
+                    <strong id="temperature">--</strong>
+                </p>
+
+                <p>
+                    💧 Humidity:
+                    <strong id="humidity">--</strong>
+                </p>
+
+                <p>
+                    💨 Wind Speed:
+                    <strong id="windSpeed">--</strong>
+                </p>
+
+                <p>
+                    ☁️ Weather:
+                    <strong id="weatherDescription">--</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Sharanya | Weather Dashboard</p>
+    </footer>
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
