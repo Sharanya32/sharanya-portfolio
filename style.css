@@ -1,6 +1,6 @@
-/* ========================================
+/* =========================================
    RESET
-======================================== */
+========================================= */
 
 * {
     margin: 0;
@@ -14,18 +14,18 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     background: #eef4ff;
     color: #222;
 }
 
 
-/* ========================================
-   HEADER / NAVIGATION
-======================================== */
+/* =========================================
+   HEADER
+========================================= */
 
 header {
-    background: #1e3a8a;
+    background: #1e63b8;
     color: white;
     position: sticky;
     top: 0;
@@ -35,25 +35,23 @@ header {
 .navbar {
     max-width: 1200px;
     margin: auto;
-    padding: 1rem 2rem;
+    padding: 15px 25px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
 }
 
 .logo h1 {
-    font-size: 1.8rem;
+    font-size: 28px;
 }
 
 .nav-links {
     list-style: none;
 
     display: flex;
+    gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.2rem;
 }
 
 .nav-links a {
@@ -67,27 +65,27 @@ header {
 }
 
 
-/* ========================================
-   GENERAL SECTION
-======================================== */
+/* =========================================
+   SECTIONS
+========================================= */
 
 section {
     max-width: 1200px;
     margin: auto;
-    padding: 4rem 2rem;
+    padding: 60px 30px;
 }
 
 section h2 {
     text-align: center;
-    font-size: 2rem;
-    color: #1e3a8a;
-    margin-bottom: 2rem;
+    color: #1764b5;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 
-/* ========================================
-   HERO SECTION
-======================================== */
+/* =========================================
+   HERO
+========================================= */
 
 .hero {
     max-width: none;
@@ -102,10 +100,8 @@ section h2 {
     background: linear-gradient(
         135deg,
         #dbeafe,
-        #eff6ff
+        #eef4ff
     );
-
-    padding: 4rem 2rem;
 }
 
 .hero-content {
@@ -113,56 +109,58 @@ section h2 {
 }
 
 .hero h2 {
-    font-size: 3rem;
-    color: #1e3a8a;
-    margin-bottom: 1rem;
+    font-size: 48px;
+    color: #1764b5;
+    margin-bottom: 15px;
 }
 
 .hero h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    color: #333;
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
 
-/* ========================================
+/* =========================================
    BUTTON
-======================================== */
+========================================= */
 
 .btn {
     display: inline-block;
 
     padding: 12px 20px;
 
-    background: #2563eb;
+    background: #1764b5;
     color: white;
-
-    text-decoration: none;
 
     border: none;
     border-radius: 8px;
 
+    text-decoration: none;
     font-weight: bold;
 
     cursor: pointer;
+
+    margin-top: 15px;
+
+    position: static;
 
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: #1d4ed8;
+    background: #0f4f91;
     transform: translateY(-2px);
 }
 
 
-/* ========================================
-   CARDS CONTAINER
-======================================== */
+/* =========================================
+   CARDS GRID
+========================================= */
 
 .cards {
     display: grid;
@@ -170,97 +168,130 @@ section h2 {
     grid-template-columns:
         repeat(auto-fit, minmax(280px, 1fr));
 
-    gap: 2rem;
+    gap: 38px;
 
     align-items: stretch;
 }
 
 
-/* ========================================
+/* =========================================
    CARD
-======================================== */
+========================================= */
 
 .card {
     background: white;
 
-    padding: 2rem;
+    padding: 38px;
 
     border-radius: 18px;
 
     box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.12);
+        0 12px 25px rgba(0, 0, 0, 0.12);
 
-    /* IMPORTANT FIX */
-    height: auto;
-    min-height: 250px;
+    /* IMPORTANT FIXES */
+    height: auto !important;
+    min-height: 0 !important;
 
-    overflow: visible;
+    overflow: visible !important;
+
+    position: static !important;
 
     display: flex;
+
     flex-direction: column;
 
-    gap: 10px;
+    justify-content: flex-start;
 
-    transition: 0.3s;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
 
     box-shadow:
-        0 15px 30px rgba(0, 0, 0, 0.15);
+        0 16px 30px rgba(0, 0, 0, 0.15);
 }
 
 
-/* ========================================
-   CARD CONTENT
-======================================== */
+/* =========================================
+   CARD HEADINGS
+========================================= */
 
 .card h3 {
-    color: #1e3a8a;
+    color: #111;
 
-    font-size: 1.4rem;
+    font-size: 24px;
 
-    margin-bottom: 5px;
+    line-height: 1.25;
+
+    margin-bottom: 2px;
 }
+
+
+/* =========================================
+   CARD PARAGRAPHS
+========================================= */
 
 .card p {
-    line-height: 1.6;
+    color: #222;
+
+    font-size: 18px;
+
+    line-height: 1.4;
 
     margin: 0;
-
-    color: #444;
 }
 
-.card ul {
-    margin: 5px 0 10px 20px;
 
-    padding: 0;
+/* =========================================
+   CARD LIST
+========================================= */
+
+.card ul {
+    margin-top: 5px;
+
+    margin-bottom: 5px;
+
+    padding-left: 20px;
 }
 
 .card li {
-    margin-bottom: 5px;
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    margin-bottom: 2px;
 }
 
 
-/* ========================================
-   CARD BUTTON
-======================================== */
+/* =========================================
+   PROJECT CARD BUTTON
+========================================= */
 
 .card .btn {
-    width: fit-content;
+    position: static !important;
 
-    margin-top: 10px;
+    display: inline-block;
+
+    width: auto;
+
+    margin-top: 15px;
+
+    align-self: flex-start;
 }
 
 
-/* ========================================
-   ABOUT SECTION
-======================================== */
+/* =========================================
+   ABOUT
+========================================= */
 
 #about .card {
     max-width: 900px;
-
     margin: auto;
 }
 
@@ -269,12 +300,14 @@ section h2 {
 }
 
 
-/* ========================================
+/* =========================================
    EDUCATION
-======================================== */
+========================================= */
 
 #education .card {
     text-align: center;
+
+    align-items: center;
 }
 
 #education .card h3 {
@@ -282,23 +315,18 @@ section h2 {
 }
 
 
-/* ========================================
+/* =========================================
    PROJECTS
-======================================== */
+========================================= */
 
 #projects {
     background: #eef4ff;
 }
 
-#projects .cards {
-    grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
-}
 
-
-/* ========================================
+/* =========================================
    SKILLS
-======================================== */
+========================================= */
 
 #skills {
     background: #f8fbff;
@@ -306,40 +334,38 @@ section h2 {
 
 #skills .card {
     text-align: center;
+
+    align-items: center;
 }
 
-#skills .card h3 {
-    margin-bottom: 10px;
-}
 
-
-/* ========================================
+/* =========================================
    CONTACT
-======================================== */
+========================================= */
 
 #contact .card {
     max-width: 700px;
-
     margin: auto;
 }
 
 
-/* ========================================
+/* =========================================
    FORM
-======================================== */
+========================================= */
 
 .form-group {
-    display: flex;
+    width: 100%;
 
+    display: flex;
     flex-direction: column;
 
-    margin-bottom: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .form-group label {
     font-weight: bold;
 
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 
 .form-group input,
@@ -352,123 +378,155 @@ section h2 {
 
     border-radius: 8px;
 
-    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 
-    font-family: inherit;
+    font-size: 16px;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: 2px solid #2563eb;
+    outline: 2px solid #1764b5;
 
-    border-color: #2563eb;
+    border-color: #1764b5;
 }
 
-textarea {
+.form-group textarea {
     resize: vertical;
 }
 
 
-/* ========================================
+/* =========================================
    FOOTER
-======================================== */
+========================================= */
 
 footer {
-    background: #1e3a8a;
+    background: #1e63b8;
 
     color: white;
 
     text-align: center;
 
-    padding: 1.5rem 1rem;
+    padding: 25px 15px;
 
-    margin-top: 2rem;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
 }
 
 
-/* ========================================
-   RESPONSIVE DESIGN
-======================================== */
+/* =========================================
+   TABLET
+========================================= */
 
-/* Tablets */
 @media (max-width: 900px) {
 
     .navbar {
         flex-direction: column;
 
-        text-align: center;
+        gap: 15px;
     }
 
     .hero h2 {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
 
     .hero h3 {
-        font-size: 1.4rem;
+        font-size: 22px;
     }
 
     section {
-        padding: 3rem 1.5rem;
+        padding: 50px 20px;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, minmax(250px, 1fr));
+
+        gap: 25px;
     }
 }
 
 
-/* Mobile */
+/* =========================================
+   MOBILE
+========================================= */
+
 @media (max-width: 600px) {
 
     .navbar {
-        padding: 1rem;
+        padding: 15px;
     }
 
     .logo h1 {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
     .nav-links {
-        gap: 0.7rem;
+        justify-content: center;
 
-        font-size: 0.9rem;
+        gap: 10px;
+
+        font-size: 14px;
     }
 
     .hero {
         min-height: 70vh;
 
-        padding: 3rem 1rem;
+        padding: 40px 20px;
     }
 
     .hero h2 {
-        font-size: 2rem;
+        font-size: 32px;
     }
 
     .hero h3 {
-        font-size: 1.2rem;
+        font-size: 20px;
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     section {
-        padding: 3rem 1rem;
+        padding: 45px 15px;
     }
 
     section h2 {
-        font-size: 1.7rem;
+        font-size: 28px;
+
+        margin-bottom: 30px;
     }
 
     .cards {
         grid-template-columns: 1fr;
 
-        gap: 1.5rem;
+        gap: 25px;
     }
 
     .card {
-        padding: 1.5rem;
+        padding: 25px;
 
-        min-height: auto;
+        width: 100%;
+
+        min-height: 0 !important;
+
+        height: auto !important;
+    }
+
+    .card h3 {
+        font-size: 22px;
+    }
+
+    .card p,
+    .card li {
+        font-size: 16px;
     }
 
     .card .btn {
-        width: fit-content;
+        width: auto;
+
+        margin-top: 15px;
     }
 }
