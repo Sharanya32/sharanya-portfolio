@@ -6,99 +6,51 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sharanya | Computer Science Portfolio</title>
-
     <meta name="description"
-        content="Portfolio of Sharanya, a Computer Science and Engineering student interested in web development.">
+        content="Sharanya's personal portfolio website - Computer Science and Engineering student">
 
-    <meta name="keywords"
-        content="Sharanya, Portfolio, HTML, CSS, JavaScript, Web Development">
-
-    <meta name="author" content="Sharanya">
+    <title>Sharanya | CSE Student Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Skip Link -->
-    <a href="#main-content" class="skip-link">
-        Skip to Main Content
-    </a>
-
-
-    <!-- HEADER -->
+    <!-- ================= HEADER ================= -->
     <header>
+        <nav class="navbar">
 
-        <nav aria-label="Main Navigation">
+            <div class="logo">
+                <h1>Sharanya</h1>
+            </div>
 
-            <h2 class="logo">
-                Sharanya
-            </h2>
-
-            <ul>
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#education">Education</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <!-- Dark Mode -->
-            <button
-                id="theme-toggle"
-                type="button"
-                aria-label="Toggle dark mode"
-                title="Toggle dark mode">
-                🌙
-            </button>
-
         </nav>
-
     </header>
 
 
-    <!-- MAIN -->
-    <main id="main-content">
+    <!-- ================= HOME ================= -->
+    <main>
 
-
-        <!-- HOME -->
         <section id="home" class="hero">
 
-            <div>
+            <div class="hero-content">
 
-                <h1>
-                    Hello, I'm Sharanya 👋
-                </h1>
+                <h2>Hello, I'm Sharanya 👋</h2>
 
-                <h3>
-                    Computer Science & Engineering Student
-                </h3>
+                <h3>Computer Science & Engineering Student</h3>
 
                 <p>
-                    Passionate about Web Development,
-                    Problem Solving and building responsive
-                    and accessible websites.
+                    Passionate about Web Development, Problem Solving
+                    and building responsive and accessible websites.
                 </p>
 
                 <a href="#projects" class="btn">
@@ -110,46 +62,50 @@
         </section>
 
 
-        <!-- ABOUT -->
+        <!-- ================= ABOUT ================= -->
         <section id="about">
 
             <h2>About Me</h2>
 
-            <article class="card">
+            <div class="card">
 
                 <p>
-                    I am a second-year Computer Science and
-                    Engineering student with a CGPA of 8.5/10.
+                    I am a second-year Computer Science and Engineering
+                    student with an interest in web development,
+                    programming and problem solving.
                 </p>
-
-                <br>
 
                 <p>
-                    I enjoy learning new technologies and
-                    developing modern web applications.
+                    I enjoy learning new technologies and creating
+                    practical projects using HTML, CSS and JavaScript.
                 </p>
 
-            </article>
+                <p>
+                    My current CGPA is <strong>8.5/10</strong>.
+                </p>
+
+            </div>
 
         </section>
 
 
-        <!-- EDUCATION -->
+        <!-- ================= EDUCATION ================= -->
         <section id="education">
 
             <h2>Education</h2>
 
             <div class="cards">
 
-                <article class="card">
+                <div class="card">
 
                     <h3>
-                        B.E. Computer Science and Engineering
+                        B.E. Computer Science & Engineering
                     </h3>
 
                     <p>
-                        AJ Institution of Engineering
-                        and Technology
+                        <strong>
+                            AJ Institution of Engineering and Technology
+                        </strong>
                     </p>
 
                     <p>
@@ -157,17 +113,17 @@
                     </p>
 
                     <p>
-                        CGPA: 8.5 / 10
+                        CGPA: <strong>8.5/10</strong>
                     </p>
 
-                </article>
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- PROJECTS -->
+        <!-- ================= PROJECTS ================= -->
         <section id="projects">
 
             <h2>My Projects</h2>
@@ -176,251 +132,245 @@
 
 
                 <!-- Hospital Management System -->
+                <div class="card">
 
-                <article class="card">
-
-                    <h3>
-                        Hospital Management System
-                    </h3>
+                    <h3>Hospital Management System</h3>
 
                     <p>
-                        An academic web application designed
-                        for patient registration, doctor
-                        management and appointments.
+                        A web-based academic project designed to manage
+                        patients, doctors and appointments efficiently.
                     </p>
 
-                </article>
+                    <p>
+                        Technologies:
+                        <strong>HTML, CSS, JavaScript</strong>
+                    </p>
+
+                </div>
 
 
                 <!-- Food Express -->
+                <div class="card">
 
-                <article class="card">
-
-                    <h3>
-                        Food Express
-                    </h3>
+                    <h3>Food Express</h3>
 
                     <p>
-                        An online food ordering website
-                        developed using HTML, CSS and
-                        JavaScript.
-                    </p>
-
-                </article>
-
-
-                <!-- JavaScript To-Do List -->
-
-                <article class="card">
-
-                    <h3>
-                        JavaScript To-Do List
-                    </h3>
-
-                    <p>
-                        A fully functional task management
-                        application with Create, Read, Update
-                        and Delete functionality.
+                        An online food ordering website that allows
+                        users to explore food items and place orders.
                     </p>
 
                     <p>
-                        Includes All, Active and Completed
-                        filters and uses localStorage to
-                        save tasks across browser reloads.
+                        Technologies:
+                        <strong>HTML, CSS, JavaScript</strong>
                     </p>
 
-                    <br>
+                </div>
 
-                    <a href="todo.html" class="btn">
+
+                <!-- To-Do List -->
+                <div class="card">
+
+                    <h3>JavaScript To-Do List</h3>
+
+                    <p>
+                        An interactive To-Do List application with
+                        task creation, editing, completion and deletion.
+                    </p>
+
+                    <p>
+                        Tasks are stored using
+                        <strong>Local Storage</strong>.
+                    </p>
+
+                    <p>
+                        Technologies:
+                        <strong>HTML, CSS, JavaScript</strong>
+                    </p>
+
+                    <a href="todo.html"
+                       class="btn"
+                       target="_blank">
                         Open To-Do List
                     </a>
 
-                </article>
+                </div>
+
+
+                <!-- Weather Dashboard -->
                 <div class="card">
-    <h3>Weather Dashboard</h3>
 
-    <p>
-        A real-time weather dashboard built using JavaScript,
-        Fetch API and a public REST API.
-    </p>
+                    <h3>Weather Dashboard</h3>
 
-    <a href="weather.html" class="btn" target="_blank">
-        View Weather Dashboard
-    </a>
-</div>
+                    <p>
+                        A real-time weather dashboard that allows users
+                        to search for a city and view current weather
+                        information.
+                    </p>
+
+                    <p>
+                        The application uses the JavaScript
+                        <strong>Fetch API</strong>,
+                        <strong>async/await</strong> and a public
+                        REST API.
+                    </p>
+
+                    <p>
+                        It displays:
+                    </p>
+
+                    <ul>
+                        <li>Temperature</li>
+                        <li>Humidity</li>
+                        <li>Wind Speed</li>
+                        <li>Weather Description</li>
+                    </ul>
+
+                    <a href="weather.html"
+                       class="btn"
+                       target="_blank">
+                        View Weather Dashboard
+                    </a>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- SKILLS -->
+        <!-- ================= SKILLS ================= -->
         <section id="skills">
 
-            <h2>Technical Skills</h2>
+            <h2>My Skills</h2>
 
             <div class="cards">
 
-
-                <article class="card">
-
-                    <h3>
-                        Web Technologies
-                    </h3>
-
-                    <p>HTML5</p>
-
-                    <p>CSS3</p>
-
-                    <p>JavaScript</p>
-
-                </article>
-
-
-                <article class="card">
-
-                    <h3>
-                        Tools
-                    </h3>
-
+                <div class="card">
+                    <h3>HTML</h3>
                     <p>
-                        Visual Studio Code
+                        Semantic HTML and accessible web page structure.
                     </p>
+                </div>
 
+                <div class="card">
+                    <h3>CSS</h3>
                     <p>
-                        GitHub
+                        Responsive layouts, Flexbox, Grid and modern CSS.
                     </p>
+                </div>
 
-                </article>
-
-
-                <article class="card">
-
-                    <h3>
-                        Web Development
-                    </h3>
-
+                <div class="card">
+                    <h3>JavaScript</h3>
                     <p>
-                        Responsive Web Design
+                        DOM manipulation, events, Local Storage,
+                        Fetch API and asynchronous JavaScript.
                     </p>
+                </div>
 
+                <div class="card">
+                    <h3>Git & GitHub</h3>
                     <p>
-                        Web Application Development
+                        Version control and deploying websites using
+                        GitHub Pages.
                     </p>
+                </div>
 
-                </article>
+                <div class="card">
+                    <h3>Problem Solving</h3>
+                    <p>
+                        Interested in programming logic and solving
+                        technical problems.
+                    </p>
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- STRENGTHS -->
-        <section id="strengths">
-
-            <h2>My Strengths</h2>
-
-            <ul>
-
-                <li>
-                    Quick Learner
-                </li>
-
-                <li>
-                    Problem Solving
-                </li>
-
-                <li>
-                    Teamwork
-                </li>
-
-                <li>
-                    Communication
-                </li>
-
-            </ul>
-
-        </section>
-
-
-        <!-- CONTACT -->
+        <!-- ================= CONTACT ================= -->
         <section id="contact">
 
             <h2>Contact Me</h2>
 
-            <p>
-                Feel free to contact me for opportunities,
-                projects or collaboration.
-            </p>
+            <div class="card">
+
+                <p>
+                    If you would like to connect with me, feel free
+                    to contact me.
+                </p>
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
 
 
-            <form
-                id="contact-form"
-                aria-label="Contact Form">
+                    <div class="form-group">
 
-                <div>
+                        <label for="email">
+                            Email
+                        </label>
 
-                    <label for="name">
-                        Name
-                    </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
 
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        autocomplete="name"
-                        required>
-
-                </div>
+                    </div>
 
 
-                <div>
+                    <div class="form-group">
 
-                    <label for="email">
-                        Email
-                    </label>
+                        <label for="message">
+                            Message
+                        </label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        autocomplete="email"
-                        required>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Enter your message"
+                            required
+                        ></textarea>
 
-                </div>
-
-
-                <div>
-
-                    <label for="message">
-                        Message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        required></textarea>
-
-                </div>
+                    </div>
 
 
-                <button type="submit">
-                    Send Message
-                </button>
+                    <button type="submit" class="btn">
+                        Send Message
+                    </button>
 
-            </form>
+                </form>
+
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
     <footer>
 
         <p>
-            © 2026 Sharanya | Portfolio
+            © 2026 Sharanya | Computer Science & Engineering Student
         </p>
 
     </footer>
