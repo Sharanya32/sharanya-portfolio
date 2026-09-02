@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4ff;
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background: #0d47a1;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.weather-container {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.weather-container h2 {
+    text-align: center;
+    color: #1565c0;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0d47a1;
+}
+
+.weather-card {
+    margin-top: 30px;
+    padding: 25px;
+    background: #eef4ff;
+    border-radius: 12px;
+}
+
+.weather-card p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+#errorMessage {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .weather-container {
+        padding: 25px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
